@@ -1,3 +1,9 @@
+/*
+dp 
+dict来保存上一次出现重复字符的位置，用来确定出现重复字符时，需要计算的起始位置
+start保存了计算的初始位置
+*/
+
 #include<iostream>
 #include<algorithm>
 #include<string>
