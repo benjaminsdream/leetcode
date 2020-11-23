@@ -17,6 +17,15 @@ bool IsHuiWen(int i){
     }
     return true;
 }
+bool IsHuiWen2(int i){
+    if(i<0 || (i%10 == 0 && i!=0) )  return false;
+    int revertedI = 0;
+    while(i>revertedI){
+        revertedI = revertedI*10 + i%10;
+        i = i /10;
+    }
+    return i== revertedI || i == revertedI/10 ? true : false;
+}
 int main() {
     vector<int> inputs;
     inputs.push_back(121);
