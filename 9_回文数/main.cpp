@@ -32,6 +32,7 @@ int main() {
     inputs.push_back(-123);
     inputs.push_back(10);
     inputs.push_back(1001);
+    inputs.push_back(0);
 
 
     for(auto i:inputs){
